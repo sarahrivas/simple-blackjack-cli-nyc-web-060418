@@ -1,5 +1,5 @@
 def welcome
-  # code #welcome here
+  puts "Welcome to the Blackjack Table"
 end
 
 def deal_card
@@ -7,9 +7,7 @@ def deal_card
 end
 
 def display_card_total(num_cards)
-    puts "Your cards add up to #{card_counter}"
-    card_counter += 1 
-  end
+    puts "Your cards add up to #{num_cards}"
 end
 
 def prompt_user
