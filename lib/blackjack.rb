@@ -35,7 +35,7 @@ def hit?(card_total)
   prompt_user
   user_input = get_user_input
     if user_input == "s"
-      #don't deal new card
+      num_cards
     elsif user_input == "h"
       new_card = deal_card
       num_cards += new_card
