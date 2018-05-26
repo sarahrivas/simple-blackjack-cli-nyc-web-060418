@@ -29,11 +29,18 @@ def initial_round
   display_card_total(first_hand) + display_card_total(second_hand)
 end
 
-def hit?(number)
+def hit?(display_card_total)
+  num_cards = display_card_total
   prompt_user
   user_input = get_user_input
-  if user_input = "h"
-    deal_card
+    if user_input == "s"
+      #don't deal new card
+    elsif user_input == "h"
+      new_card = deal_card
+      num_cards += new_card
+    else 
+      invalid_command
+    end
 end
 
 def invalid_command
