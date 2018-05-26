@@ -29,7 +29,7 @@ def initial_round
   display_card_total(first_hand) + display_card_total(second_hand)
 end
 
-def hit(number)
+def hit?(number)
   # code hit? here
 end
 
