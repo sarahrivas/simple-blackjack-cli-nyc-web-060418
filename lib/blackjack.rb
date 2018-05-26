@@ -6,8 +6,8 @@ def deal_card
   1 + rand(11)
 end
 
-def display_card_total(num_cards)
-    puts "Your cards add up to #{num_cards}"
+def display_card_total(card_total)
+    puts "Your cards add up to #{card_total}"
 end
 
 def prompt_user
@@ -27,7 +27,7 @@ def initial_round
   second_hand = deal_card
   card_sum = first_hand + second_hand
   puts display_card_total(card_sum)
-  first_hand + second_hand
+  card_sum
 end
 
 def hit?(display_card_total)
